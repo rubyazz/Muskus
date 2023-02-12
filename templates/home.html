@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+{% load static %}
+<HTML lang="en">
+<HEAD>
+	<META charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<TITLE>Muskus</TITLE>
+	<link rel = "icon" href = 
+"{% static 'app/img/logo.png'%}" 
+        type = "image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:wght@300;400;600&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	
+</HEAD>
+<BODY>
+
+	
+
+<SECTION class="section0">
+<!--		<div class="container">-->
+			<nav style="background-color: #000;" class="navbar navbar-expand-lg navbar-light ">
+				<div class="logo-div">
+					<a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'app/img/logo.png' %}" alt=""></a>
+				</div>
+				<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <div class="fa">
+					  <ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a style="color: white;" class="nav-link " aria-current="page" href="#section1">О нас</a>
+					  </li>
+					  <li class="nav-item">
+						<a style="color: white;" class="nav-link " aria-current="page" href="#section2">Скидки</a>
+					  </li>
+					  <li class="nav-item">
+						<a style="color: white;" class="nav-link" aria-current="page" href="#section3">Ароматы</a>
+					  </li>
+					  <li class="nav-item">
+						<a style="color: white;" class="nav-link" aria-current="page" href="#section4">Контакты</a>
+					  </li>
+
+				  </ul>
+				  </div>
+				  <div class="con">
+					  <a class="navbar-brand" href="https://www.instagram.com/muskus.taraz/">
+					<img src="{% static 'app/img/insta.png' %}" alt="" width="20" height="20">
+				  </a>
+				  <a class="navbar-brand" href="https://wa.me/7472019595">
+					<img src="{% static 'app/img/what.png' %}" alt="" width="20" height="20">
+				  </a>
+				  <a class="navbar-brand" href="https://www.tiktok.com/@muskus.taraz?_t=8ZoYbmzB3Y6&_r=1">
+					<img src="{% static 'app/img/ic.png' %}" alt="" width="20" height="20">
+				  </a>
+				  </div>
+				</div>
+			  </nav>
+<!--		</div>-->
+	</SECTION>
+
+<!-- section 2 -->
+<SECTION id="section1" class="section1">
+	
+	<DIV class="container">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'app/img/doni.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5 class="about1">О нас</h5>
+        <p class="dom1">Мы долго шли к тому, что бы стать номер один
+в городе. Мы можем громко заявить о том,
+что мы в парфюмерии в городе Тараз №1
+Максимально низкие цены. Ассортимент духов.
+Бесплатная доставка. Подарки на каждом заказе.
+Лучшая консультация. А главное, это наш Бренд.
+У нас более 5000 довольных покупателей, не зря
+они выбирают именно нас. Ведь у нас доступные цены,
+бесплатная доставка, а главное качественные ароматы.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/doni2.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5 class="about2">400</h5>
+        <p class="dom2">виды ароматов</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/doni3.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <p class="dom3">Мы работаем с такими компаниями как <B class="forcol">Франция, Испания, Швейцария.</B> </p> -->
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</DIV>
+
+</SECTION>
+
+<SECTION id="section2" class="section2 mb-5">
+	
+	<DIV class="container">
+		<BUTTON class="skidka">Скидка</BUTTON>
+
+	<div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'app/img/d3.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="fake1">10мл + 5мл</h5>
+        <p class="fake2">Купи 10мл аромат и получи 5мл аромат в подарок</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/s2.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="fake1">50% скидка</h5>
+        <p class="fake2">Купи 10мл аромат и получи 5мл аромат в подарок</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/img/d3.png' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="fake1">35% скидка </h5>
+        <p class="fake2">Купи 10мл аромат и получи 5мл аромат в подарок</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</DIV>
+</SECTION>
+
+<SECTION id="section3" class="section3 mb-5">
+	<DIV class="container">
+		<nav id="navid2" class="navbar navbar-light">
+		  <div class="container-fluid">
+		    <a id="nalink" class="navbar-brand" href="#">
+		      <img width="75px" height="55px" src="{% static 'app/img/blogo.png' %}" alt=""  class="align-text-center"></a>
+		      <div class="kk">Ароматы</div>
+		  </div>
+		</nav>
+
+
+		  <div class="row mt-5">
+		    <div class="col-sm-4">
+		      <A href="{% url 'men' %}"><IMG width="355px" src="{% static 'app/img/aromat2.png' %}" alt="png">
+		      <DIV class="text">МУЖСКОЙ</DIV></A>
+		    </div>
+		    <div class="col-sm-4">
+		      <A href="{% url 'women' %}"><IMG width="355px" src="{% static 'app/img/aromat2.png' %}" alt="png">
+		      <DIV class="text">ЖЕНСКИЙ</DIV></A>
+		    </div>
+		    <div class="col-sm-4">
+		      <A href="{% url 'uni' %}"><IMG width="355px" src="{% static 'app/img/aromat2.png' %}" alt="png">
+		      <DIV class="text ">UNISEX</DIV></A>
+		    </div>
+		  </div>
+		
+	</DIV>
+</SECTION>
+
+<SECTION style="background-color: #000;" id="section4" class="section4">
+	<DIV class="container">
+		<DIV class="row">
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<<IMG src="{% static 'app/img/tel.png' %}" alt="">
+					<DIV class="text1">+7 747 201 9595</DIV>
+				</DIV>
+			</DIV>
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<IMG src="{% static 'app/img/what.png' %}" alt="">
+					<DIV class="text1">+7 747 201 9595</DIV>
+				</DIV>
+			</DIV>
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<IMG src="{% static 'app/img/insta.png' %}" alt="">
+					<DIV class="text1">muskus.taraz</DIV>
+				</DIV>
+			</DIV>
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<IMG src="{% static 'app/img/ic.png' %}" alt="">
+					<DIV class="text1">muskus.taraz</DIV>
+				</DIV>
+			</DIV>
+		</DIV>
+		 <div class="w-100 d-none d-md-block"></div> 
+		 <IMG class="big" src="{% static 'app/img/big.png' %}" alt="">
+	</DIV>
+</SECTION>
+</BODY>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</HTML>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+<HTML lang="en">
+<HEAD>
+	<META charset="UTF-8">
+	<META name="viewport" content="width=device-width, initial-scale=1.0">
+	<TITLE>Muskus</TITLE>
+	<link rel = "icon" href = 
+"{% static 'app/img/logo.png'%}" 
+        type = "image/x-icon">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'app/css/style.css' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:wght@300;400;600&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+	
+</HEAD>
+<BODY>
+
+
+<SECTION class="section0">
+<!--		<div class="container">-->
+			<nav style="background-color: #000;" class="navbar navbar-expand-lg navbar-light ">
+				<div class="logo-div">
+					<a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'app/img/logo.png' %}" alt=""></a>
+				</div>
+				<button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <div class="fa">
+					  <ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a style="color: white;" class="nav-link " aria-current="page" href="#section1">О нас</a>
+					  </li>
+					  <li class="nav-item">
+						<a style="color: white;" class="nav-link " aria-current="page" href="#section2">Скидки</a>
+					  </li>
+					  <li class="nav-item">
+						<a style="color: white;" class="nav-link" aria-current="page" href="#section3">Ароматы</a>
+					  </li>
+					  <li class="nav-item">
+						<a style="color: white;" class="nav-link" aria-current="page" href="#section4">Контакты</a>
+					  </li>
+
+				  </ul>
+				  </div>
+				  <div class="con">
+					  <a class="navbar-brand" href="https://www.instagram.com/muskus.taraz/">
+					<img src="{% static 'app/img/insta.png' %}" alt="" width="20" height="20">
+				  </a>
+				  <a class="navbar-brand" href="https://wa.me/7472019595">
+					<img src="{% static 'app/img/what.png' %}" alt="" width="20" height="20">
+				  </a>
+				  <a class="navbar-brand" href="https://www.tiktok.com/@muskus.taraz?_t=8ZoYbmzB3Y6&_r=1">
+					<img src="{% static 'app/img/ic.png' %}" alt="" width="20" height="20">
+				  </a>
+				  </div>
+				</div>
+			  </nav>
+<!--		</div>-->
+	</SECTION>
+
+
+
+
+<DIV class="container">
+	<SECTION class="section5">
+		<DIV class="row">
+			<DIV class="col-md-6">
+				<IMG style="width: 80%; min-width: 320px;"src="{{ post.photo.url }}" alt="">
+			</DIV>
+				<DIV class="col-md-6">
+				<H3 style="margin-top: 8%; width: 80%; min-width: 320px;" class="we">{{ post.title }}</H3>
+				<P style="width: 80%; min-width: 320px;" class="desc">{{ post.description }}</P>
+				<B class="price">1ml = {{ post.price }}kzt</B><BR>
+				<BUTTON style="width: 80%; min-width: 320px;" class="order">
+					<A href="https://wa.me/7472019595">Заказать</A>
+				</BUTTON>
+					</DIV>
+			</DIV>
+	</SECTION>
+</DIV>
+
+
+ 
+
+
+
+<SECTION style="background-color: #000;" id="section4" class="section4">
+	<DIV class="container">
+		<DIV class="row">
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<IMG src="{% static 'app/img/tel.png' %}" alt="">
+					<DIV class="text1">+7 747 201 9595</DIV>
+				</DIV>
+			</DIV>
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<IMG src="{% static 'app/img/what.png' %}" alt="">
+					<DIV class="text1">+7 747 201 9595</DIV>
+				</DIV>
+			</DIV>
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<IMG src="{% static 'app/img/insta.png' %}" alt="">
+					<DIV class="text1">muskus.taraz</DIV>
+				</DIV>
+			</DIV>
+			<DIV class="col-sm-3">
+				<DIV class="b">
+					<IMG src="{% static 'app/img/ic.png' %}" alt="">
+					<DIV class="text1">muskus.taraz</DIV>
+				</DIV>
+			</DIV>
+		</DIV>
+		 <div class="w-100 d-none d-md-block"></div> 
+		 <IMG class="big" src="{% static 'app/img/big.png' %}" alt="">
+	</DIV>
+</SECTION>
+</BODY>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</HTML>
